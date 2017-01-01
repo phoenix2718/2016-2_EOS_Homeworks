@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phoen.hw3">
+    <uses-permission android:name="android.permission.INTERNET" /> <!--To show web pages of external URLs-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MyWebBrowser"
+            android:label="MyWebBrowser"> <!--The name for users-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/> <!--Not necessary. DEFAULT opens the hyperlink text.-->
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyMemo"
+            android:label="MyMemo"> <!--The name for users-->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

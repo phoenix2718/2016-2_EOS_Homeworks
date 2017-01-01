@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HW5</string>
+    <string name="no_file_playing">No file on playing now.</string>
+    <string name="Broadcasting.action.MUSIC_PAUSE_RESUME">com.example.phoen.hw5.Broadcasting.action.MUSIC_PAUSE_RESUME</string>
+    <string name="Broadcasting.action.MUSIC_BACK">com.example.phoen.hw5.Broadcasting.action.MUSIC_BACK</string>
+    <string name="Broadcasting.action.MUSIC_STOP">com.example.phoen.hw5.Broadcasting.action.MUSIC_STOP</string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.phoen.hw4.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="날짜 별 대기질"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/main_edittext_air_quality_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="20XX년X월X일" />
+        <EditText
+            android:id="@+id/main_edittext_air_quality_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="지역명"/>
+        <Button
+            android:id="@+id/main_button_air_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘의 미세먼지"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/main_edittext_fine_dust_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="지역명"/>
+        <Button
+            android:id="@+id/main_button_fine_dust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조회"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</LinearLayout>
